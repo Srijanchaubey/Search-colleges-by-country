@@ -9,6 +9,7 @@ btn.addEventListener("click", async () => {
 
 function show(colarr) {
   let list = document.querySelector("#list");
+  list.innerText = "";
   for (col of colarr) {
     let li = document.createElement("li");
     li.innerText = col.name;
